@@ -72,6 +72,10 @@ select {
     scroll-behavior: auto !important;
   }
 }
+body {
+  background: #f9f9f9;
+}
+
 * {
   font-family: "Open Sans", sans-serif;
 }
@@ -219,7 +223,7 @@ select::placeholder {
   background: #06d6a0;
 }
 .todo-item.diaria {
-  background: #118ab2;
+  background: #1d99c2;
 }
 
 /*# sourceMappingURL=style.css.map */
