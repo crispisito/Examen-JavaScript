@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do`s</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header class="wrapper header">
+        <div class="header-container">
+            <h1 class="title">Mi lista de tareas</h1>
+        </div>
+    </header>
+    
+    <section class="wrapper container-app">
+        <h2 class="title-secondary">Añade una nueva tarea</h2>
+        <form id="addTodoForm" class="add-todo">
+            <input type="text" name="todo" placeholder="Nueva tarea">
+            <select name="priority" id="">
+                <option value="urgente">¡URGENTE!</option>
+                <option value="intermedia">Intermedia</option>
+                <option value="normal">Normal</option>
+                <option value="diaria">Diaria</option>
+            </select>
+            <button class="btn-form" type="submit">Añadir</button>
+        </form>
+        <h2 class="title-secondary">Haz una búsqueda</h2>
+        <form id="searchTodoForm" class="search-todo">
+            <select name="searchPriority">
+                <option value="prioridad" disabled="disabled" selected="true">Prioridad</option>
+                <option value="urgente">¡URGENTE!</option>
+                <option value="intermedia">Intermedia</option>
+                <option value="normal">Normal</option>
+                <option value="diaria">Diaria</option>
+                <option value="todas">Todas</option>
+            </select>
+            <input type="text" name="searchTodoText" placeholder="Busca un To-Do">
+        </form>
+
+        <div class="list-todo">
+        </div>
+    </section>
+
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>

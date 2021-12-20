@@ -1,0 +1,58 @@
+@use '../base/variables' as v;
+
+
+.container-app {
+    margin-bottom: 40px;
+}
+
+.add-todo {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    input, 
+    select {
+        margin-right: 10px;
+    }
+}
+
+.search-todo {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    select {
+        margin-right: 10px;
+    }
+    select,
+    input {
+        width: 50%;
+    }
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: v.$radius-btn;
+    padding-left: 15px;
+    margin-bottom: 14px;
+    box-shadow: v.$shadows;
+
+    p {
+        color: v.$dark-blue;
+    }
+  
+    &.urgente {
+        background: v.$red;
+    }
+    &.intermedia {
+        background: v.$yellow;
+    }
+    &.normal {
+        background: v.$green;
+    }
+    &.diaria {
+        background: v.$blue;
+    }
+}

@@ -1,0 +1,225 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+button {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.title {
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.title-secondary {
+  font-size: 20px;
+  font-weight: 400;
+  color: #073b4c;
+  margin-bottom: 4px;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+button {
+  min-width: 90px;
+  padding: 6px;
+  border: none;
+}
+
+.btn-form {
+  background: #073b4c;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 9px -3px #17394473;
+  transition: all 0.2s ease;
+}
+.btn-form:hover {
+  filter: brightness(130%);
+}
+
+.btn-delete {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: #edf2f4;
+  color: #073b4c;
+}
+.btn-delete:hover {
+  width: 110px;
+}
+
+input,
+select {
+  min-height: 36px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #073b4c;
+  color: #073b4c;
+  width: 50%;
+  font-size: 18px;
+}
+input:focus,
+select:focus {
+  box-shadow: 0 0 9px -3px #17394473;
+}
+input::placeholder,
+select::placeholder {
+  color: #073b4c;
+  font-size: 18px;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+.header-container {
+  background: #073b4c;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 20px 15px;
+  box-shadow: 0 0 9px -3px #17394473;
+}
+.header-container .title {
+  text-align: center;
+  color: white;
+}
+
+.container-app {
+  margin-bottom: 40px;
+}
+
+.add-todo {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.add-todo input,
+.add-todo select {
+  margin-right: 10px;
+}
+
+.search-todo {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search-todo select {
+  margin-right: 10px;
+}
+.search-todo select,
+.search-todo input {
+  width: 50%;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding-left: 15px;
+  margin-bottom: 14px;
+  box-shadow: 0 0 9px -3px #17394473;
+}
+.todo-item p {
+  color: #073b4c;
+}
+.todo-item.urgente {
+  background: #ef476f;
+}
+.todo-item.intermedia {
+  background: #ffd166;
+}
+.todo-item.normal {
+  background: #06d6a0;
+}
+.todo-item.diaria {
+  background: #118ab2;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,7 @@
+@use 'variables' as v;
+
+.wrapper {
+    max-width: v.$wrapper;
+    margin: 0 auto;
+    padding: 0 15px;
+}

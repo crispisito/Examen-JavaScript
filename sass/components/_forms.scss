@@ -1,0 +1,22 @@
+@use '../base/variables' as v;
+
+input, 
+select {
+    min-height: 36px;
+    border-radius: v.$radius-btn;
+    outline: none;
+    border: 1px solid v.$dark-blue;
+    color: v.$dark-blue;
+    width: 50%;
+    font-size: v.$font-general;
+
+    &:focus {
+        box-shadow: v.$shadows;
+    }
+
+    &::placeholder {
+        color: v.$dark-blue;
+        font-size: v.$font-general;
+    }
+}
+

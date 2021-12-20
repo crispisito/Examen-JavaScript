@@ -1,0 +1,16 @@
+@use '../base/variables' as v;
+
+.header {
+    margin-bottom: 30px;
+}
+.header-container {
+    background: v.$dark-blue;
+    border-bottom-left-radius: v.$radius;
+    border-bottom-right-radius: v.$radius;
+    padding: 20px 15px;
+    box-shadow: v.$shadows;
+    .title {
+        text-align: center;
+        color: white;
+    }
+}

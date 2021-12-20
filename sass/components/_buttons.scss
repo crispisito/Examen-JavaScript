@@ -1,0 +1,30 @@
+@use '../base/variables' as v;
+
+button {
+    min-width: 90px;
+    padding: 6px;
+    border: none;
+}
+
+.btn-form {
+    background: v.$dark-blue;
+    color: white;
+    border-radius: v.$radius-btn;
+    box-shadow: v.$shadows;
+    transition: v.$transition;
+
+    &:hover {
+        filter: brightness(130%);
+    }
+}
+
+.btn-delete {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: v.$gray;
+    color: v.$dark-blue;
+
+    &:hover {
+        width: 110px;
+    }
+}
