@@ -131,11 +131,11 @@ class AppToDos {
                 this.listContainer.append(searchTodo);
             }
         })
-        /* this.searchForm.reset(); */
     }
 
     searchText(e) {
         this.searchForm.searchPriority.value = 'prioridad';
+        
         if(e.key === 'Backspace' || e.key === 'Delete'){
             this.letterCount = this.letterCount.substring(0, this.letterCount.length - 1);
         }else if(e.key === 'Enter'){
